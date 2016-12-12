@@ -11,6 +11,9 @@ router.get('/', function(req, res, next) {
 
     var mainPlates = collection.find({}).toArray().then(function(
       products) {
+      console.log(products.filter(function(item) {
+        return item.productType == "main"
+      }));
       res.render('index', {
         title: "Mum's Shop",
         mainPlates: products.filter(function(item) {
@@ -19,9 +22,9 @@ router.get('/', function(req, res, next) {
         drinks: products.filter(function(item) {
           return item.productType == "drink"
         }),
-        dessert: prodcuts.filter(function(item) {
+        desserts: products.filter(function(item) {
           return item.productType == "dessert"
-        });
+        })
       });
       console.log("Connected successfully to server");
       db.close();
