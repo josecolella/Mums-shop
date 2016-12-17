@@ -4,57 +4,48 @@ block content
   .row
     //- .col-lg-8
     h1.text-xl-center Mum's Cafeteria: Since 1956
-  //
-    Carousel
-    ==================================================
   #myCarousel.carousel.slide(data-ride='carousel')
     // Indicators
     .carousel-inner(role='listbox')
       .carousel-item.active
         .parallax
         //- img.first-slide(src='/images/delicious-food.jpg', alt='First slide')
-  // /.carousel
-  //
-    Marketing messaging and featurettes
-    ==================================================
-  // Wrap the rest of the page in another container to center all the content.
   .container.marketing
     .row
-      h1 Main Courses
+      h1.display-5 Main Courses
     .row
     each plate in mainPlates
       .col-lg-4
-        img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
+        img.img-circle(src=plate.image, alt='Generic placeholder image', width='140', height='140').rounded
         h2= plate.name
         p= plate.price
+            | €
+        button.btn.btn-primary(data-property=plate.name) Add to order
     .row
-      h1 Drinks
+      h1.display-5 Drinks
     .row
       each drink in drinks
         .col-lg-4
-          img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
+          img.img-circle(src=drink.image, alt='Generic placeholder image', width='140', height='140').rounded
           h2= drink.name
           p= drink.price
+            | €
+          button.btn.btn-primary(data-property=drink.name) Add to order
     .row
-      h1 Desserts
+      h1.display-5 Desserts
     .row
       each dessert in desserts
         .col-lg-4
-          img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', width='140', height='140')
+          img.img-circle(src=dessert.image, alt='Generic placeholder image', width='140', height='140').rounded
           h2= dessert.name
           p= dessert.price
-  
+            | €
+          button.btn.btn-primary(data-property=dessert.name) Add to order
     footer
       p.float-xs-right
         a(href='#') Back to top
       p
-        | © 2016 Mum's Cafeteria, Inc. · 
+        | © 2016 Mum's Cafeteria, Inc. ·
         a(href='#') Privacy
-        |  · 
+        |  ·
         a(href='#') Terms
-  // /.container
-
-  //- ul
-    //- each plate in plates
-      //- li=plate.name
-  
