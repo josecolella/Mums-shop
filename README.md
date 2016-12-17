@@ -27,20 +27,23 @@ npm start
 
 #Usage
 
-The main page contains all the products with a simple panel to the right that allows you to see the products added.
+- The main page contains all the products with a simple panel to the right that allows you to see the products added.
 
 !["Main page"](https://d17oy1vhnax1f7.cloudfront.net/items/3p2t3N302D3L2W3a083S/Screen%20Recording%202016-12-17%20at%2003.33%20pm.gif)
 
 
-- Three for two requirement
+##Three for two requirement
 
 !["Three for two requirement"](https://cl.ly/2u1Q2q1V2x3e/Screen%20Recording%202016-12-17%20at%2003.37%20pm.gif)
 
 
-- Menu requirement
+##Menu requirement
 
 !["Menu requirement"](https://cl.ly/3q0N1O191A3L/Screen%20Recording%202016-12-17%20at%2003.38%20pm.gif)
 
+##Entire purchase flow
+
+!["Purchaseflow"](https://cl.ly/3M340W0g0n31/Screen%20Recording%202016-12-17%20at%2003.40%20pm.gif)
 
 
 
