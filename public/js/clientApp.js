@@ -106,6 +106,9 @@ var footerArray = [{
                         });
                         orders = {};
                         menu = [];
+                        $('ul > li').remove();
+                        console.log("Here");
+                        $("#total").text(0);
                     }
                     console.log(data);
                 }
